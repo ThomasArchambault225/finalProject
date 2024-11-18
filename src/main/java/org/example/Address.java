@@ -1,3 +1,4 @@
+package org.example;
 /**
  This class defines an address using a street,
  city, state, and zipcode.
