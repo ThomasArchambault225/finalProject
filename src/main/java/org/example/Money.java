@@ -98,7 +98,7 @@ public class Money {
     }
 
     // ADD LINES FOR TASK #2 HERE
-// Document and write an equals method
+// Document and write equals method
     public boolean equals(Money other) {
         if (this.dollars == other.dollars && this.cents == other.cents) {
             return true;
