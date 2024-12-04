@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Average {
     // Attributes
-    int[] data; // Array to store the scores
-    double mean; // Arithmetic mean of the scores
+    private int[] data; // Array to store the scores
+    private double mean; // Arithmetic mean of the scores
 
     // Constructor
     public Average() {
