@@ -1,4 +1,4 @@
-package org.example;
+import org.example.Song;
 
 import java.util.Scanner;
 import java.io.*;
@@ -7,30 +7,29 @@ import java.io.*;
  This program creates a list of songs for a CD
  by reading from a file.
  */
-public class CompactDisc
-{
-    public static void main(String[] args)throws IOException
-    {
-        Scanner input = new Scanner(new File("Classics.txt"));
-        String title;
-        String artist;
-// ADD LINES FOR TASK #3 HERE
-// Declare an array of Song objects, called cd,
-// with a size of 6
-        for (int i = 0; i < cd.length; i++)
-        {
-            title = input.nextLine();
-            artist = input.nextLine();
-// ADD LINES FOR TASK #3 HERE
-// Fill the array by creating a new song with
-// the title and artist and storing it in the
-// appropriate position in the array
+public class CompactDisc {
+    public static void main(String[] args) throws IOException {
+        // Open the file
+        Scanner input = new Scanner(new File("src/Classics.txt"));
+
+
+        // Declare an array of Song objects
+        Song[] cd = new Song[6];
+
+        // Read the file and populate the array
+        for (int i = 0; i < cd.length; i++) {
+            String title = input.nextLine();
+            String artist = input.nextLine();
+            cd[i] = new Song(title, artist); // Create a new Song object and store it in the array
         }
+
+        // Display the contents of the CD
         System.out.println("Contents of Classics:");
-        for (int i = 0; i < cd.length; i++)
-        {
-// ADD LINES FOR TASK #3 HERE
-// Print the contents of the array to the console
+        for (Song song : cd) {
+            System.out.print(song); // Print each song
         }
+
+        // Close the file
+        input.close();
     }
 }
