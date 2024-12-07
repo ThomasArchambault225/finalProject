@@ -1,3 +1,4 @@
+package org.example;
 import org.example.Song;
 
 import java.util.Scanner;

@@ -1,3 +1,4 @@
+package org.example;
 import org.example.Address;
 import org.example.CreditCard;
 import org.example.Money;
