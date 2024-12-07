@@ -1,5 +1,4 @@
 package org.example;
-
 /**
  * This class represents a Book with details such as title, author, price, publisher, and ISBN.
  * The ISBN can be validated as either ISBN-10 or ISBN-13 format.
