@@ -1,5 +1,8 @@
+package org.example;
+
 import java.util.Scanner;
 import java.io.*;
+
 /**
  This program creates a list of songs for a CD
  by reading from a file.
@@ -12,8 +15,8 @@ public class CompactDisc
         String title;
         String artist;
 // ADD LINES FOR TASK #3 HERE
-// Declare an array of Song objects, called cd, // with
-        a size of 6
+// Declare an array of Song objects, called cd,
+// with a size of 6
         for (int i = 0; i < cd.length; i++)
         {
             title = input.nextLine();
