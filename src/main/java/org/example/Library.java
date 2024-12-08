@@ -1,3 +1,4 @@
+package org.example;
 
 import java.util.ArrayList;
 
@@ -8,6 +9,7 @@ import java.util.ArrayList;
  * @author Thomas Archambaut
  */
 public class Library {
+    // Data members
     private ArrayList<Book> books;
 
     /**
@@ -92,6 +94,7 @@ public class Library {
         return sb.toString();
     }
 
+    // Getter and Setter methods
 
     public ArrayList<Book> getBooks() {
         return books;
