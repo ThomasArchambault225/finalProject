@@ -57,4 +57,47 @@ public class Library {
         return searchResults;
     }
 
+    /**
+     * Checks if two Library objects are equal based on their book lists.
+     *
+     * @param obj The object to compare with.
+     * @return true if the libraries are equal, false otherwise.
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
 
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Library library = (Library) obj;
+        return books.equals(library.books);
+    }
+
+    /**
+     * Returns a string representation of the library and its books.
+     *
+     * @return A string containing all books in the library.
+     */
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Library contains ").append(books.size()).append(" books:\n");
+        for (Book book : books) {
+            sb.append(book.toString()).append("\n");
+        }
+        return sb.toString();
+    }
+
+
+    public ArrayList<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(ArrayList<Book> books) {
+        this.books = books;
+    }
+}
